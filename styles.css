@@ -203,7 +203,7 @@ section {
 /* About Section */
 .about {
     background: white;
-    padding: 40px 0;
+    padding: 60px 0;
     min-height: auto;
     height: auto;
 }
@@ -215,6 +215,41 @@ section {
     align-items: center;
 }
 
+.highlight-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.highlight-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.highlight-section h3:last-child {
+    margin-bottom: 0;
+}
+
+.detail-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #667eea;
+}
+
+.detail-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
 .about-text p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
@@ -224,6 +259,51 @@ section {
 
 .about-info {
     margin-top: 2rem;
+}
+
+/* Inspiration Section */
+.inspiration {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.inspiration-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.inspiration-text .section-title {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.inspiration-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.inspiration-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.inspiration-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.inspiration-image-container:hover .inspiration-image {
+    transform: scale(1.05);
 }
 
 .info-item {
@@ -575,8 +655,31 @@ section {
         text-align: center;
     }
 
+    .highlight-section {
+        padding: 1.5rem;
+    }
+
+    .highlight-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .detail-section {
+        padding: 1.5rem;
+    }
+
     .about-info {
         justify-content: center;
+    }
+
+    .inspiration-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .inspiration-text .section-title {
+        text-align: center;
+        font-size: 1.8rem;
     }
 
     .contact-content {
