@@ -342,6 +342,38 @@ section {
     background: #f8f9fa;
 }
 
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.skills-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.skills-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.skills-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.skills-image-container:hover .skills-image {
+    transform: scale(1.05);
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -389,6 +421,38 @@ section {
 /* Projects Section */
 .projects {
     background: white;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.projects-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.projects-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.projects-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.projects-image-container:hover .projects-image {
+    transform: scale(1.05);
 }
 
 .projects-grid {
@@ -481,8 +545,9 @@ section {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
 .contact-info h3 {
@@ -530,6 +595,24 @@ section {
 .contact-item p {
     color: #666;
     margin: 0;
+}
+
+.contact-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.contact-image-container:hover .contact-image {
+    transform: scale(1.05);
 }
 
 .contact-form {
@@ -680,6 +763,18 @@ section {
     .inspiration-text .section-title {
         text-align: center;
         font-size: 1.8rem;
+    }
+
+    .skills-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .projects-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
 
     .contact-content {
