@@ -65,7 +65,7 @@ window.addEventListener('scroll', () => {
 
 // Typing effect for hero title
 function typeWriter() {
-    const text = "안녕하세요, 개발자입니다";
+    const text = "창의적인 프론트엔드 개발자입니다";
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
         heroTitle.innerHTML = '';
@@ -252,15 +252,16 @@ if (skillsSection) {
     skillsObserver.observe(skillsSection);
 }
 
-// Parallax effect for hero section
+// Parallax effect for hero section (disabled to prevent image movement)
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero-content');
     
+    // Disabled parallax effect to prevent image movement
     if (hero && heroContent) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+        // hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        // heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
     }
 });
 
@@ -268,7 +269,7 @@ window.addEventListener('scroll', () => {
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
-        color: #2563eb !important;
+        color: #3D5A3D !important;
     }
     
     .nav-link.active::after {
