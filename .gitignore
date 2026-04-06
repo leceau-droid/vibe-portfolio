@@ -1,0 +1,7 @@
+# 배포 불필요 파일
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.vscode/
+.idea/
